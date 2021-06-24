@@ -4,7 +4,7 @@ package com.epam.rd.java.basic.practice1;
 public class Demo {
 
     public static void main(String[] args) {
-        Part1.main();        
+        Part1.main(new String[0]);        
     }
 
 }
