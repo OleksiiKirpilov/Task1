@@ -10,7 +10,7 @@ public class Demo {
         Part4.main(new String[]{"65536", "256"});
         Part5.main(new String[]{"111"});
         Part6.main(new String[]{"100"});
-
+        Part7.main(new String[0]);
     }
 
 }
