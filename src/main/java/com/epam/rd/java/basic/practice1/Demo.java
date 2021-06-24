@@ -1,9 +1,10 @@
 package com.epam.rd.java.basic.practice1;
 
-public class Part3 {
+
+public class Demo {
 
     public static void main(String[] args) {
-        // Not implemented yet.    
+        Part1.main();        
     }
-	
+
 }
