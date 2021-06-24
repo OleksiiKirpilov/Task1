@@ -2,7 +2,7 @@ package com.epam.rd.java.basic.practice1;
 
 public class Part7 {
 
-    final static int RADIX = 26;
+    static final int RADIX = 26;
 
     public static void main(String[] args) {
     	System.out.print(rightColumn("AA"));
