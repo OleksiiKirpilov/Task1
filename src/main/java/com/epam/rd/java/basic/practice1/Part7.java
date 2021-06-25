@@ -15,22 +15,21 @@ public class Part7 {
     }
 
     public static int str2int(String number) {
-		int n = 0;
-		for(char c : number.toCharArray()){
-			n += (c - 'A' + 1);
-			n *= RADIX;
-		}
-		return n/RADIX;
+        int n = 0;
+        for(char c : number.toCharArray()){
+            n += (c - 'A' + 1);
+            n *= RADIX;
+        }
+        return n/RADIX;
     }
 
     public static String int2str(int number) {
         String result = "";
-		while(number > 0){
-			char c = (char) ('A' + ((number - 1) % RADIX));
-			number = (number - 1) / RADIX;
-			//result = String.valueOf(c) + result;
-                        result = String.valueOf(c).concat(result);
-		}
+        while(number > 0){
+            char c = (char) ('A' + ((number - 1) % RADIX));
+            number = (number - 1) / RADIX;
+            result = String.valueOf(c).concat(result);
+        }
         return result;
     }
 
