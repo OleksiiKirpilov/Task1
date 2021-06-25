@@ -5,14 +5,13 @@ public class Part7 {
     static final int RADIX = 26;
 
     public static void main(String[] args) {
-        System.out.println(str2int("A")); 
-		System.out.println(str2int("Z"));
-        System.out.println(str2int("AA"));
-		System.out.println(str2int("AAA"));
-		System.out.println(int2str(2));		
-		System.out.println(int2str(26));
-		System.out.println(int2str(27));
-		System.out.println(int2str(703));
+        String[] testStrings = "A B Z AA AZ BA ZZ AAA".split(" ");
+        for(String s : testStrings){
+            System.out.print(s + " ==> ");
+            int n = str2int(s);
+            System.out.print(n);
+            System.out.print(" ==> " + int2str(n) + (s.equals("AAA") ? "" : " "));
+        }
     }
 
     public static int str2int(String number) {
