@@ -10,7 +10,7 @@ public class Part7 {
             System.out.print(s + " ==> ");
             int n = str2int(s);
             System.out.print(n);
-            System.out.print(" ==> " + int2str(n) + (s.equals("AAA") ? "" : " "));
+            System.out.println(" ==> " + int2str(n));
         }
     }
 
