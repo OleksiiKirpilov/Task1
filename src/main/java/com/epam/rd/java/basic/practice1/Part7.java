@@ -7,10 +7,8 @@ public class Part7 {
     public static void main(String[] args) {
         String[] testStrings = "A B Z AA AZ BA ZZ AAA".split(" ");
         for(String s : testStrings){
-            System.out.print(s + " ==> ");
             int n = str2int(s);
-            System.out.print(n);
-            System.out.println(" ==> " + int2str(n));
+            System.out.printf("%s ==> %d ==> %s%n", s, n, int2str(n));
         }
     }
 
