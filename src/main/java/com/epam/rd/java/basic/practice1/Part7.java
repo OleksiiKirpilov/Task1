@@ -5,8 +5,7 @@ public class Part7 {
     static final int RADIX = 26;
 
     public static void main(String[] args) {
-        String[] testStrings = "A B Z AA AZ BA ZZ AAA".split(" ");
-        for(String s : testStrings){
+        for(String s : "A B Z AA AZ BA ZZ AAA".split(" ")){
             int n = str2int(s);
             System.out.printf("%s ==> %d ==> %s%n", s, n, int2str(n));
         }
@@ -15,10 +14,9 @@ public class Part7 {
     public static int str2int(String number) {
         int n = 0;
         for(char c : number.toCharArray()){
-            n += (c - 'A' + 1);
-            n *= RADIX;
+            n = n * RADIX + (c - 'A' + 1);
         }
-        return n/RADIX;
+        return n;
     }
 
     public static String int2str(int number) {
